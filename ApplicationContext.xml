@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id = "parent" class="co.sinheritance.Student">
+        <property name = "firstName" value = "Akhila"></property>
+        
+    </bean>
+    
+    <bean id = "sub" class ="co.sinheritance.Student">
+        <property name="lastName" value="Goud"/>
+    </bean>
+    
+     <bean id = "sub1" parent = "parent"> <!--bean inheritance  --> 
+        <property name="lastName" value="Goud"/>
+    </bean>
+
+</beans>
